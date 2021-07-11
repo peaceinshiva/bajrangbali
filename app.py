@@ -2,7 +2,6 @@
 import pickle
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
-import numpy as np
 import pandas as pd
 import os
 
