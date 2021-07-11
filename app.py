@@ -42,8 +42,8 @@ def uploadfile():
             f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename("test_data.xlsx")))
             test=pd.read_excel("static/test_data.xlsx")
         else:
-            f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename('test_data.csv')))
-            test=pd.read_csv("static/test_data.csv")
+            f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename("test12.csv")))
+            test=pd.read_csv("static/test12.csv")
             
         test=test[['cab_type', 'name', 'product_id', 'distance', 'surge_multiplier',
            'destination']]
