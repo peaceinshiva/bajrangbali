@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 import pandas as pd
 import os
 
-cab=pickle.load(open('/static/cab.pkl','rb'))
+cab=pickle.load(open('static/cab.pkl','rb'))
 pdt=pickle.load(open('/static/product.pkl','rb'))
 name=pickle.load(open('/static/name.pkl','rb'))
 desti=pickle.load(open('/static/destination.pkl','rb'))
