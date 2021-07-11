@@ -8,3 +8,4 @@ Werkzeug==1.0.1
 scikit-learn==0.24.1
 xgboost<=1.4.1
 xlrd>=1.0.0
+openpy>=3.0.7
