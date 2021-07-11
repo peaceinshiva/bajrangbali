@@ -5,12 +5,12 @@ from werkzeug.utils import secure_filename
 import pandas as pd
 import os
 
-xgb=pickle.load(open('static/xgboost.pkl', 'rb'))
-cab=pickle.load(open('static/cab.pkl','rb'))
-pdt=pickle.load(open('static/product.pkl','rb'))
-name=pickle.load(open('static/name.pkl','rb'))
-desti=pickle.load(open('static/destination.pkl','rb'))
-pt=pickle.load(open("static/power.pkl",'rb'))
+cab=pickle.load(open('/static/cab.pkl','rb'))
+pdt=pickle.load(open('/static/product.pkl','rb'))
+name=pickle.load(open('/static/name.pkl','rb'))
+desti=pickle.load(open('/static/destination.pkl','rb'))
+pt=pickle.load(open("/static/power.pkl",'rb'))
+xgb=pickle.load(open('/static/xgboost.pkl', 'rb'))
 
 app=Flask(__name__)
 UPLOAD_FOLDER = 'static'
