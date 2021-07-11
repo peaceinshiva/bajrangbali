@@ -13,7 +13,9 @@ desti=pickle.load(open('static/destination.pkl','rb'))
 pt=pickle.load(open("static/power.pkl",'rb'))
 
 app=Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'static'
+UPLOAD_FOLDER = 'static'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 @app.route('/')
 
 def upload():
